@@ -1,0 +1,48 @@
+p {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+h1 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 36px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+input[type=text] {
+    border: 0;
+    border-bottom: 2px solid #1976D2;
+    font-size: 30px;
+    line-height: 35px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+	color: rgb(138, 139, 139);
+}
+
+input[type=submit] {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+}

@@ -1,0 +1,17 @@
+{% extends "home/layout.html" %}
+{% block content %}
+<div class="container">
+    {% if not good %}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EYfuISiohyI" frameborder="0" allow="autoplay; encrypted-media"allowfullscreen></iframe>
+        <p>Z jakiego kraju byli ludzie, którzy tańczyli do tej piosenki?</p>
+        <form action="youtube" method="post">
+            {% csrf_token %}
+            <input type="text" name="answer" placeholder="Kraj..."><br><br>
+            <input type="submit" value="Wyślij">
+        </form>
+    {% elif good %}
+        <p>{{ good }}</p>
+    {% endif %}
+    <p>{{ context }}</p>
+</div>
+{% endblock content %}

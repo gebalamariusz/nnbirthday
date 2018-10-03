@@ -1,0 +1,12 @@
+{% extends "home/layout.html" %}
+{% block content %}
+<div class="container">
+    <p>W drugą stronę - wyspa na której byliśmy...</p>
+    <form action="ascii" method="post">
+        {% csrf_token %}
+        <input type="text" name="answer" placeholder="Wpisz hasło..."><br><br>
+        <input type="submit" value="Wyślij">
+    </form>
+    <p>{{ context }}</p>
+</div>
+{% endblock content %}
