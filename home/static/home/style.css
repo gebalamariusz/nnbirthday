@@ -16,13 +16,14 @@ h1 {
 input[type=text] {
     border: 0;
     border-bottom: 2px solid #1976D2;
-    font-size: 30px;
+    font-size: 100%;
     line-height: 35px;
     height: 70px;
     text-align: center;
     padding: 10px;
     background: transparent;
-	color: rgb(138, 139, 139);
+    color: rgb(138, 139, 139);
+    width: 50%;
 }
 
 input[type=submit] {
@@ -36,6 +37,7 @@ input[type=submit] {
     cursor: pointer;
     font-family: 'Kodchasan', sans-serif;
     font-weight: 700;
+    width: 100%;
 }
 
 input[type=submit]:hover {
