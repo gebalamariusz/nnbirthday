@@ -4,8 +4,8 @@ from django.http import HttpResponse
 def index(request):
     if request.method == 'POST':
         if request.POST.get('answer') == 'Kocham':
-            # return redirect('/ascii')
-            return render(request, 'home/wait.html')
+            return redirect('/ascii')
+            # return render(request, 'home/wait.html')
         else:
             return render(request, 'home/index.html', {'context': 'Złe hasło... (wielkość liter ma znaczenie)'})
     return render(request, 'home/index.html')
